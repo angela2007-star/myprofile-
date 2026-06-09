@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Angela Biya | Digital Portfolio</title>
+<title>Angela Biya Noronha | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -11,191 +13,283 @@
     padding:0;
     box-sizing:border-box;
     font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
 }
 
 body{
-    background:linear-gradient(180deg,#0f172a,#1e293b);
-    color:white;
-    padding-bottom:30px;
+    background:linear-gradient(135deg,#fdf2ff,#ffe6f2,#f3e8ff);
+    min-height:100vh;
+    padding:15px;
+    color:#333;
 }
 
-.hero{
+.container{
+    max-width:450px;
+    margin:auto;
+}
+
+.header{
     text-align:center;
-    padding:40px 20px;
+    background:rgba(255,255,255,0.75);
+    backdrop-filter:blur(12px);
+    padding:25px;
+    border-radius:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
 }
 
-.hero img{
-    width:130px;
-    height:130px;
+.profile-img{
+    width:120px;
+    height:120px;
     border-radius:50%;
-    border:4px solid #38bdf8;
+    border:5px solid white;
     object-fit:cover;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
 }
 
-.hero h1{
+.name{
     margin-top:15px;
     font-size:28px;
+    font-weight:700;
+    color:#7c3aed;
 }
 
-.hero p{
-    color:#cbd5e1;
+.role{
+    color:#666;
+    margin-top:5px;
 }
 
-.card{
-    background:#1e293b;
-    margin:15px;
-    padding:18px;
-    border-radius:20px;
-    border:1px solid rgba(255,255,255,0.1);
+.dashboard-title{
+    margin-top:20px;
+    font-size:20px;
+    color:#9333ea;
+    font-weight:700;
+    text-align:left;
 }
 
-.card h2{
-    color:#38bdf8;
+.dashboard{
+    display:flex;
+    gap:10px;
+    margin-top:12px;
+    width:100%;
+}
+
+.stat{
+    flex:1;
+    background:linear-gradient(135deg,#e9d5ff,#ffd6e8);
+    color:#6b21a8;
+    padding:14px 8px;
+    border-radius:16px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    min-height:78px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.stat h3{
+    color:#6b21a8;
+    font-size:16px;
+    line-height:1.2;
+}
+
+.stat p{
+    font-size:11px;
+    color:#7c3aed;
+    margin-top:4px;
+}
+
+.stat-link{
+    display:block;
+    text-decoration:none;
+    cursor:pointer;
+    transition:transform .2s ease, box-shadow .2s ease;
+}
+
+.stat-link:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+
+.section{
+    margin-top:18px;
+    background:rgba(255,255,255,0.85);
+    padding:20px;
+    border-radius:22px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+}
+
+.section h2{
+    color:#9333ea;
     margin-bottom:12px;
+    font-size:20px;
 }
 
-.tags{
+.section ul{
+    padding-left:20px;
+}
+
+.section li{
+    margin-bottom:8px;
+}
+
+.tag-container{
     display:flex;
     flex-wrap:wrap;
-    gap:8px;
+    gap:10px;
 }
 
 .tag{
-    background:#0ea5e9;
-    padding:8px 12px;
-    border-radius:20px;
-    font-size:13px;
+    background:linear-gradient(135deg,#e9d5ff,#ffd6e8);
+    color:#6b21a8;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:500;
 }
 
-.timeline-item{
-    margin-bottom:12px;
-    padding-left:10px;
-    border-left:3px solid #38bdf8;
-}
-
-.project{
-    background:#334155;
-    padding:12px;
-    border-radius:12px;
-    margin-top:10px;
-}
-
-.btn{
-    display:block;
-    text-align:center;
+.contact-link{
+    color:#7c3aed;
     text-decoration:none;
-    background:#38bdf8;
-    color:#0f172a;
-    padding:12px;
-    border-radius:12px;
-    font-weight:bold;
-    margin-top:15px;
+    font-weight:500;
+    word-break:break-word;
+}
+
+.contact-link:hover{
+    text-decoration:underline;
 }
 
 .footer{
     text-align:center;
-    margin-top:20px;
-    color:#94a3b8;
+    margin:20px 0;
+    color:#666;
+    font-size:13px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="hero">
-    <img src="image.jpg.jpeg " alt="Profile">
-    <h1>Angela Biya Noronha</h1>
-    <p>Computer Science Engineering Student</p>
-</div>
+<div class="container">
 
-<div class="card">
-    <h2>About Me</h2>
-    <p>
-        Enthusiastic CSE student passionate about technology,
-        web development, UI/UX design, AI.
-    </p>
-</div>
+    <div class="header">
+        <img src="img.jpg" alt="ProfilePhoto"class="profile-img">
 
-<div class="card">
-    <h2>Skills</h2>
-    <div class="tags">
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">Python</span>
-        <span class="tag">UI/UX Design</span>
-        <span class="tag">Video Editing</span>
-    </div>
-</div>
+        <h1 class="name">Angela Biya Noronha</h1>
+        <p class="role">Computer Science Engineering Student</p>
 
-<div class="card">
-    <h2>Projects</h2>
+        <h2 class="dashboard-title">Dashboard</h2>
+        <div class="dashboard">
+            <a class="stat stat-link" href="#about">
+                <h3>About Me</h3>
+                <p>Know me</p>
+            </a>
 
-    <div class="project">
-        <h3>A predictive nutrition intelligence platform</h3>
-        <p>Platform for students to showcase and sell handmade products.</p>
+            <a class="stat stat-link" href="#contact">
+                <h3>Contacts</h3>
+                <p>Email / Links</p>
+            </a>
+
+            <a class="stat stat-link" href="#projects">
+                <h3>Projects</h3>
+                <p>My projects</p>
+            </a>
+        </div>
     </div>
 
-    <div class="project">
-        <h3>Personal Portfolio</h3>
-        <p>Responsive portfolio website showcasing skills and achievements.</p>
-    </div>
-</div>
-
-<div class="card">
-    <h2>Certifications</h2>
-
-    <div class="timeline-item">
-        <strong>Python Programming</strong><br>
-        Online Certification
+    <div class="section" id="about">
+        <h2>About Me</h2>
+        <p>
+            I am Angela Biya Noronha, a Computer Science Engineering student
+            passionate about technology, creativity, web development,
+            artificial intelligence, and digital innovation.
+        </p>
     </div>
 
-    <div class="timeline-item">
-        <strong>Web Development</strong><br>
-        Professional Training Certificate
+    <div class="section" id="skills">
+        <h2>💻 Skills</h2>
+        <div class="tag-container">
+            <span class="tag">Python</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">UI/UX Design</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">AI Tools</span>
+        </div>
     </div>
 
-    <div class="timeline-item">
-        <strong>UI/UX Design</strong><br>
-        Design Workshop Certificate
-    </div>
-</div>
-
-<div class="card">
-    <h2>Workshops Attended</h2>
-
-    <div class="timeline-item">
-        AI & Machine Learning Workshop
+    <div class="section" id="projects">
+        <h2>🚀 Projects</h2>
+        <ul>
+            <li><strong>Portfolio Website</strong> - Designed and developed a personal portfolio to showcase profile, skills, and contact details.</li>
+            <li><strong>Fitfuel ai</strong> - a personalized predictive nutrition intelligence platform</li>
+            <li><strong>subsphere AI</strong> - a platform was students can communicate and share notes and assignments</li>
+            <li><strong>artesians</strong> - Platform for students to showcase and sell handmade products</li>
+        </ul>
     </div>
 
-    <div class="timeline-item">
-        Web Development Bootcamp
+    <div class="section">
+        <h2>🏆 Achievements</h2>
+        <ul>
+            <li>Completed multiple online certification courses.</li>
+            <li>Participated in technical events and workshops.</li>
+            <li>Built portfolio and web development projects.</li>
+            <li>Active learner in emerging technologies.</li>
+        </ul>
     </div>
 
-    <div class="timeline-item">
-        Design Thinking Workshop
+    <div class="section">
+        <h2>🎓 Workshops Attended</h2>
+        <ul>
+            <li>Artificial Intelligence Workshop</li>
+            <li>Web Development Bootcamp</li>
+            <li>UI/UX Design Workshop</li>
+        </ul>
     </div>
-</div>
 
-<div class="card">
-    <h2>Achievements</h2>
-    <ul>
-        <li>Completed multiple technical certifications.</li>
-        <li>Built personal and academic web projects.</li>
-        <li>Participated in technology workshops and events.</li>
-    </ul>
-</div>
+    <div class="section">
+        <h2>📜 Certificates</h2>
+        <ul>
+            <li>Python Programming</li>
+            <li>Web Development</li>
+            <li>UI/UX Design</li>
+            <li>Artificial Intelligence Fundamentals</li>
+        </ul>
+    </div>
 
-<div class="card">
-    <h2>Contact</h2>
-    <p>📧 yourmail@example.com</p>
-    <p>💼 LinkedIn Profile</p>
-    <p>💻 GitHub Profile</p>
+    <div class="section">
+        <h2>💜 Passion</h2>
+        <p>
+            Exploring innovative technologies, designing modern websites,
+            creating digital content, learning AI, and building impactful
+            software solutions.
+        </p>
+    </div>
 
-    <a href="#" class="btn">Connect With Me</a>
-</div>
+    <div class="section" id="hobbies">
+        <h2> 🎨Hobbies</h2>
+        <div class="tag-container">
+            <span class="tag">Drawing</span>
+            <span class="tag">Reading</span>
+            <span class="tag">designing</span>
+            <span class="tag">Traveling</span>
+            <span class="tag">Video Editing</span>
+            <span class="tag">Designing</span>
+        </div>
+    </div>
 
-<div class="footer">
-    © 2026 Angela Biya Noronha
+    <div class="section" id="contact">
+        <h2>📞 Contact</h2>
+        <p>Email: <a class="contact-link" href="mailto:yourmail@example.com">yourmail@example.com</a></p>
+        <p>LinkedIn: <a class="contact-link" href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+        <p>GitHub: <a class="contact-link" href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    </div>
+
+    <div class="footer">
+        © 2026 Angela Biya Noronha | Personal Portfolio
+    </div>
+
 </div>
 
 </body>
